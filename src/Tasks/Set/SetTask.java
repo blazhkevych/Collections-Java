@@ -25,8 +25,8 @@ public class SetTask {
         System.out.println("set1 after adding two arbitrary strings: " + set1);
 
         // c. Add all elements from list1 and list2 to set1
-        ArrayList<String> list1 = new ArrayList<>(Arrays.asList("orange", "grape"));
-        ArrayList<String> list2 = new ArrayList<>(Arrays.asList("kiwi", "pineapple", "melon"));
+        List<String> list1 = Arrays.asList("orange", "grape");
+        List<String> list2 = Arrays.asList("kiwi", "pineapple", "melon");
         set1.addAll(list1);
         set1.addAll(list2);
         System.out.println("set1 after adding elements from list1 and list2: " + set1);
@@ -35,7 +35,7 @@ public class SetTask {
         System.out.println("Values of set1: " + set1);
 
         // e. Create a LinkedHashSet<String> (set2)
-        LinkedHashSet<String> set2 = new LinkedHashSet<>();
+        Set<String> set2 = new LinkedHashSet<>();
         System.out.println("set2: " + set2);
 
         // f. Add all elements from list2 and a duplicate entry from list3 to set2

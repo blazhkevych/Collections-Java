@@ -17,7 +17,8 @@ public class ArrayListTask {
      */
     public static void main(String[] args) {
         // a. Create an ArrayList<String> (list1)
-        java.util.ArrayList<String> list1 = new java.util.ArrayList<>();
+        //java.util.ArrayList<String> list1 = new java.util.ArrayList<>();
+        List<String> list1 = new ArrayList<>();
         System.out.println("list1: " + list1);
 
         // b. Create a string array. Add all elements from the array to the list (in one method call)
@@ -26,7 +27,7 @@ public class ArrayListTask {
         System.out.println("list1 after adding array: " + list1);
 
         // c. Create a new ArrayList<String> (list2) and initialize it with the previous list (list1)
-        java.util.ArrayList<String> list2 = new java.util.ArrayList<>(list1);
+        List<String> list2 = new ArrayList<>(list1);
         System.out.println("list2 after initializing with list1: " + list2);
 
         // d. Create a list (list3) using Arrays.asList(...)
@@ -39,7 +40,7 @@ public class ArrayListTask {
         System.out.println("list2 after inserting list3 in the middle: " + list2);
 
         // f. Sort the list in descending order
-        Collections.sort(list2, Collections.reverseOrder());
+        list2.sort(Collections.reverseOrder());
         System.out.println("list2 after sorting in descending order: " + list2);
 
         // g. *Remove every second element using ListIterator
